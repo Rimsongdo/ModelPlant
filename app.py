@@ -36,7 +36,7 @@ def predict():
     image = Image.open(io.BytesIO(file.read()))
     image = preprocess_image(image)
 
-    # Set the input tensor
+    
     interpreter.set_tensor(input_details[0]['index'], image)
 
     # Run inference
